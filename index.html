@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlamAura - Men's Fashion</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #ffffff !important;
+        }
+
+        .banner {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+
+        .banner img:hover {
+            transform: scale(1.05);
+        }
+
+        .banner-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.4em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2.8em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 2em; /* Increased font size for product titles */
+        }
+
+        .card-text {
+            font-size: 1.5em; /* Increased font size for product descriptions */
+        }
+
+        .testimonial-text {
+            font-size: 2em; /* Increased font size for testimonial text */
+        }
+
+        .testimonial-author {
+            font-size: 1.4em; /* Increased font size for testimonial author */
+            font-weight: bold; /* Made author name bold */
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #000000;
+            color: #fff;
+            padding: 40px 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer h5 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        footer ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        footer ul li {
+            margin-bottom: 10px;
+        }
+
+        footer .social-icons {
+            font-size: 24px;
+        }
+
+        footer .social-icons a {
+            margin-right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">GlamAura</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <img src="images/banner.jpg" alt="Stylish Fashion Banner">
+        <div class="banner-content">
+            <h1>Explore the Latest Men's Fashion</h1>
+            <a href="shop.html" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Categories Navigation -->
+    <nav>
+        <a href="#tshirts">T-Shirts</a>
+        <a href="#shirts">Shirts</a>
+        <a href="#jeans">Jeans</a>
+        <a href="#shoes">Shoes</a>
+        <a href="#blazers">Blazers/Suits</a>
+        <a href="#accessories">Accessories</a>
+    </nav>
+
+    <section class="categories" id="tshirts">
+        <h2 class="category-title">T-Shirts</h2>
+        <a class="subcategory-link" href="graphic_tshirts.html">Graphic T-shirts</a>
+        <a class="subcategory-link" href="polo_tshirts.html">Polo T-shirts</a>
+        <a class="subcategory-link" href="sports_tshirts.html">Sports T-shirts</a>
+        <a class="subcategory-link" href="hooded_tshirts.html">Hooded T-shirts</a>
+    </section>
+    <section class="category" id="shirts">
+        <h2 class="category-title">Shirts</h2>
+        <a class="subcategory-link" href="casual_shirts.html">Casual Shirts</a>
+        <a class="subcategory-link" href="formal_shirts.html">Formal Shirts</a>
+        <a class="subcategory-link" href="trendy_shirts.html">Trendy Shirts</a>
+        <a class="subcategory-link" href="floral_shirts.html">Floral Shirts</a>
+    </section>
+
+    <section class="category" id="jeans">
+        <h2 class="category-title">Jeans</h2>
+        <a class="subcategory-link" href="slim_fit_jeans.html">Slim Fit Jeans</a>
+        <a class="subcategory-link" href="regular_jeans.html">Regular Jeans</a>
+        <a class="subcategory-link" href="ripped_jeans.html">Ripped Jeans</a>
+        <a class="subcategory-link" href="boot_cut_jeans.html">Boot Cut Jeans</a>
+    </section>
+
+    <section class="category" id="shoes">
+        <h2 class="category-title">Shoes</h2>
+        <a class="subcategory-link" href="sneakers.html">Sneakers</a>
+        <a class="subcategory-link" href="sports_shoes.html">Sports Shoes</a>
+        <a class="subcategory-link" href="casual_shoes.html">Casual Shoes</a>
+        <a class="subcategory-link" href="formal_shoes.html">Formal Shoes</a>
+    </section>
+
+    <section class="category" id="blazers">
+        <h2 class="category-title">Blazers/Suits</h2>
+        <a class="subcategory-link" href="stylish_blazer.html">Stylish Blazer</a>
+        <a class="subcategory-link" href="classic_suit.html">Classic Suit</a>
+        <a class="subcategory-link" href="formal_blazer.html">Formal Blazer</a>
+        <a class="subcategory-link" href="casual_blazer.html">Casual Blazer</a>
+    </section>
+
+    <section class="category" id="accessories">
+        <h2 class="category-title">Accessories</h2>
+        <a class="subcategory-link" href="caps.html">Watches</a>
+        <a class="subcategory-link" href="bags.html">Bags</a>
+        <a class="subcategory-link" href="belts.html">Belts</a>
+        <a class="subcategory-link" href="sunglasses.html">Sunglasses</a>
+    </section>
+</section>
+
+    <!-- Featured Products Section -->
+    <div class="container-fluid section">
+        <h2>Featured Products</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="images/pic1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Classic Self Design Spread Collar Casual Shirt</h5>
+                        <p class="card-text">Shirt</p>
+                        <a href="product1.html" class="btn btn-primary">View Product</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="images/pic2.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Burgundy Italian Fabric Velvet Blazer</h5>
+                        <p class="card-text">Blazer</p>
+                        <a href="product2.html" class="btn btn-primary">View Product</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="images/pic3.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Light Green 3D Graphic Print Crew Neck Oversize T-Shirt</h5>
+                        <p class="card-text">T-shirt</p>
+                        <a href="product3.html" class="btn btn-primary">View Product</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Customer Testimonials Section -->
+    <div class="container-fluid section">
+        <h2>Customer Testimonials</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="testimonial-text">"Great quality products! I love shopping at GlamAura!"</p>
+                        <h5 class="testimonial-author">Sandeep</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="testimonial-text">"Amazing styles and fast delivery. Highly recommend!"</p>
+                        <h5 class="testimonial-author">Venkat</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="testimonial-text">"Best shopping experience ever! Will be back for more."</p>
+                        <h5 class="testimonial-author">Madhavan</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Customer Service</h5>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Return Order</a></li>
+                        <li><a href="#">Cancel Order</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>About GlamAura</h5>
+                    <ul>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

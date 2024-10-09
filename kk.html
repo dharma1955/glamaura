@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - GlamAura</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #ffffff !important;
+        }
+
+        .banner {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            max-height: 600px;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            /* Ensures the banner fits perfectly */
+        }
+
+        h2 {
+            margin-top: 20px;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .categories {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .categories ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .categories ul li {
+            display: inline-block;
+            margin-right: 20px;
+            font-size: 18px;
+        }
+
+        .product-category {
+            margin-top: 40px;
+            padding: 0;
+            /* Remove any default padding */
+        }
+
+        .product-category h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: left;
+            /* Align category titles to the left */
+        }
+
+        .product-category .category-item {
+            margin-bottom: 30px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .product-category .category-item:hover {
+            transform: scale(1.05);
+            /* Zoom in effect */
+        }
+
+        .product-category img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .product-category .category-item h5 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        /* Full-width row setup */
+        .container-fluid {
+            padding: 0;
+            /* Remove padding on the container */
+        }
+
+        .row {
+            margin: 0;
+            /* Remove margin on the row */
+        }
+
+        .col-md-3 {
+            padding: 0;
+            /* Remove padding on the columns */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">GlamAura</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <img src="images/p30.jpg" alt="Shop Banner">
+    </section>
+
+    <!-- Categories Section -->
+    <div class="categories">
+        <h2>Our Products</h2>
+        <ul>
+            <li>T-Shirts</li>
+            <li>Shirts</li>
+            <li>Jeans</li>
+            <li>Shoes</li>
+            <li>Blazers/Suits</li>
+            <li>Accessories</li>
+        </ul>
+    </div>
+
+    <!-- Product Categories Section -->
+    <section class="categories">
+        <div class="container-fluid product-category"></div>
+            <h3>T-Shirts</h3>
+            <div class="row no-gutters">
+                <div class="col-md-3 category-item">
+                    <img src="images/p1.jpg" alt="Graphic T-shirts">
+                    <h5>Graphic T-shirts from ₹599</h5>
+                </div>
+                <div class="col-md-3 category-item">
+                    <img src="images/p2.jpg" alt="Polo T-shirts">
+                    <h5>Polo T-shirts from ₹699</h5>
+                </div>
+                <div class="col-md-3 category-item">
+                    <img src="images/p3.jpg" alt="Sports T-shirts">
+                    <h5>Sports T-shirts from ₹499</h5>
+                </div>
+                <div class="col-md-3 category-item">
+                    <img src="images/p4.jpg" alt="Hooded T-shirts">
+                    <h5>Hooded T-shirts from ₹799</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add more product categories as needed -->
+    <section class="categories">
+        <div class="container-fluid product-category"></div>
+            <h3>Shirts</h3>
+            <div class="row no-gutters">
+                <div class="col-md-3 category-item">
+                    <img src="images/p5.jpg" alt="Casual Shirts">
+                    <h5>Casual Shirts from ₹899</h5>
+                </div>
+                <div class="col-md-3 category-item">
+                    <img src="images/p6.jpg" alt="Formal Shirts">
+                    <h5>Formal Shirts from ₹999</h5>
+                </div>
+                <div class="col-md-3 category-item">
+                    <img src="images/p7.jpg" alt="Denim Shirts">
+                    <h5>Denim Shirts from ₹1099</h5>
+                </div>
+                <div class="col-md-3 category-item">
+                    <img src="images/p8.jpg" alt="Checked Shirts">
+                    <h5>Checked Shirts from ₹799</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Add more product categories as needed -->
+    <section class="categories">
+        <div class="container-fluid product-category"></div>
+            <h3>Jeans</h3>
+            <div class="row no-gutters">
+                <div class="col-md-3 category-item">
+                    <img src="images/p9.jpg" alt="Slim fit Jeans">
+                    <h5>Slim fit jeans from ₹999</h5>
+                </div>
+                <div class="col-md-3 category-item">
+                    <img src="images/p10.jpg" alt="Regular Jeans">
+                    <h5>Regular Jeans from ₹1399</h5>
+                </div>
+                <div class="col-md-3 category-item">
+                    <img src="images/p11.jpg" alt="Ripped Jeans">
+                    <h5>Ripped Jeans from ₹1299</h5>
+                </div>
+                <div class="col-md-3 category-item">
+                    <img src="images/p12.jpg" alt="Boot Cut Jeans">
+                    <h5>Boot Cut Jeans from ₹999</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="categories">
+        <div class="container-fluid product-category"></div>
+            <h3>Shoes</h3>
+            <div class="row no-gutters">
+                <div class="col-md-3 category-item">
+                    <img src="images/p13.jpg" alt="Sneakers">
+                    <h5>Sneakers from ₹1299</h5>
+                </div>
+                <div class="col-md-3 category-item">
+                    <img src="images/p14.jpg" alt="Sports Shoes">
+                    <h5>Sports Shoes from ₹1399</h5>
+                </div>
+                <div class="col-md-3 category-item">
+                    <img src="images/p15.jpg" alt="Casual Shoes">
+                    <h5>Casual shoes from ₹1799</h5>
+                </div>
+                <div class="col-md-3 category-item">
+                    <img src="images/p16.jpg" alt="Formal Shoes">
+                    <h5>Formal Shoes from ₹999</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="categories">
+        <div class="container-fluid product-category"></div>
+        <h3>Blazers/Suits</h3>
+        <div class="row no-gutters">
+            <div class="col-md-3 category-item">
+                <img src="images/p17.jpg" alt="Stylish Blazers">
+                <h5>Stylish Blazers from ₹2999</h5>
+            </div>
+            <div class="col-md-3 category-item">
+                <img src="images/p18.jpg" alt="Classic Suits">
+                <h5>Classic Suits from ₹4999</h5>
+            </div>
+            <div class="col-md-3 category-item">
+                <img src="images/p19.jpg" alt="Formal Blazer">
+                <h5>Formal Blazer from ₹3599</h5>
+            </div>
+            <div class="col-md-3 category-item">
+                <img src="images/p20.jpg" alt="Casual Blazer">
+                <h5>Casual Blazer from ₹2499</h5>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="categories">
+        <div class="container-fluid product-category"></div>
+        <h3>Accessories</h3>
+        <div class="row no-gutters">
+            <div class="col-md-3 category-item">
+                <img src="images/p21.jpg" alt="Stylish Cap">
+                <h5>Stylish Cap from ₹250</h5>
+            </div>
+            <div class="col-md-3 category-item">
+                <img src="images/p22.jpg" alt="Sunglasses">
+                <h5>Sunglasses from ₹799</h5>
+            </div>
+            <div class="col-md-3 category-item">
+                <img src="images/p23.jpg" alt="Chains">
+                <h5>Chains from ₹799</h5>
+            </div>
+            <div class="col-md-3 category-item">
+                <img src="images/p24.jpg" alt="Leather Belt">
+                <h5>Leather Belt from ₹899</h5>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- JS Script Links -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

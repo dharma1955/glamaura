@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlamAura - Shop Men's Fashion</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .banner {
+            width: 100%; /* Full width */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .categories {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .products-container {
+            display: flex;
+            justify-content: space-between; /* Adjust for spacing */
+            flex-wrap: wrap; /* Allows wrapping */
+            margin: 20px; /* Outer margin for the container */
+        }
+
+        .product-item {
+            flex: 0 1 calc(33.33% - 15px); /* Set width to 33.33% minus margin for 3 items */
+            max-width: 300px; /* Limit the maximum width */
+            margin: 5px; /* Reduced space between items */
+            text-align: center; /* Center text */
+            border: 1px solid #ccc; /* Optional border for visibility */
+            border-radius: 5px; /* Rounded corners */
+            padding: 10px; /* Inner padding */
+            transition: transform 0.2s; /* Smooth transform on hover */
+        }
+
+        .product-item:hover {
+            transform: scale(1.05); /* Scale effect on hover */
+        }
+
+        .product-item img {
+            max-width: 100%; /* Responsive images */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px; /* Round image corners */
+        }
+
+        /* Optional styles for headers */
+        .category-title {
+            margin: 20px 0;
+            font-size: 1.5em;
+        }
+
+        header {
+            background-color: #f8f9fa; /* Light background for header */
+            padding: 10px 0; /* Padding for the header */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+        }
+
+        nav {
+            margin: 10px 0; /* Margin for navigation */
+        }
+
+        nav a {
+            margin: 0 15px; /* Spacing between nav items */
+            color: #007bff; /* Bootstrap primary color */
+            text-decoration: none; /* Remove underline */
+        }
+
+        nav a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GlamAura</h1>
+        <nav>
+            <a href="#tshirts">T-Shirts</a>
+            <a href="#shirts">Shirts</a>
+            <a href="#jeans">Jeans</a>
+            <a href="#shoes">Shoes</a>
+            <a href="#blazers">Blazers/Suits</a>
+            <a href="#accessories">Accessories</a>
+        </nav>
+    </header>
+
+    <!-- Banner Image -->
+    <img class="banner" src="images/p30.jpg" alt="Banner Image">
+
+    <!-- T-Shirts Category -->
+    <section class="categories" id="tshirts">
+        <h2 class="category-title">T-Shirts</h2>
+        <div class="products-container">
+            <div class="product-item">
+                <img src="images/p1.jpg" alt="Graphic T-shirts">
+                <h3>Graphic T-shirts</h3>
+                <p>from ₹599</p>
+            </div>
+            <div class="product-item">
+                <img src="images/p5.jpg" alt="Polo T-shirts">
+                <h3>Polo T-shirts</h3>
+                <p>from ₹699</p>
+            </div>
+            <div class="product-item">
+                <img src="images/p6.jpg" alt="Sports T-shirts">
+                <h3>Sports T-shirts</h3>
+                <p>from ₹499</p>
+            </div>
+            <div class="product-item">
+                <img src="images/p7.jpg" alt="Hooded T-shirts">
+                <h3>Hooded T-shirts</h3>
+                <p>from ₹799</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shirts Category -->
+    <section class="categories" id="shirts">
+        <h2 class="category-title">Shirts</h2>
+        <div class="products-container">
+            <div class="product-item">
+                <img src="images/p9.jpg" alt="Casual Shirts">
+                <h3>Casual Shirts</h3>
+                <p>from ₹999</p>
+            </div>
+            <div class="product-item">
+                <img src="images/p10.jpg" alt="Formal Shirts">
+                <h3>Formal Shirts</h3>
+                <p>from ₹1399</p>
+            </div>
+            <div class="product-item">
+                <img src="images/p11.jpg" alt="Trendy Shirts">
+                <h3>Trendy Shirts</h3>
+                <p>from ₹1299</p>
+            </div>
+            <div class="product-item">
+                <img src="images/p12.jpg" alt="Floral Print Shirts">
+                <h3>Floral Print Shirts</h3>
+                <p>from ₹999</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jeans Category -->
+    <section class="categories" id="jeans">
+        <h2 class="category-title">Jeans</h2>
+        <div class="products-container">
+            <div class="product-item">
+                <img src="images/p13.jpg" alt="Slim Fit Jeans">
+                <h3>Slim Fit Jeans</h3>
+                <p>from ₹999</p>
+            </div>
+            <div class="product-item">
+                <img src="images/p14.jpg" alt="Regular Jeans">
+                <h3>Regular Jeans</h3>
+                <p>from ₹1399</p>
+            </div>
+            <div class="product-item">
+                <img src="images/p15.jpg" alt="Ripped Jeans">
+                <h3>Ripped Jeans</h3>
+                <p>from ₹1299</p>
+            </div>
+            <div class="product-item">
+                <img src="images/p16.jpg" alt="Boot Cut Jeans">
+                <h3>Boot Cut Jeans</h3>
+                <p>from ₹999</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shoes Category -->
+    <section class="categories" id="shoes">
+        <h2 class="category-title">Shoes</h2>
+        <div class="products-container">
+            <div class="product-item">
+                <img src="images/p17.jpg" alt="Sneakers">
+                <h3>Sneakers</h3>
+                <p>from ₹1299</p>
+            </div>
+            <div class="product-item">
+                <img src="images/p18.jpg" alt="Sports Shoes">
+                <h3>Sports Shoes</h3>
+                <p>from ₹1399</p>
+            </div>
+            <div class="product-item">
+                <img src="images/p19.jpg" alt="Casual Shoes">
+                <h3>Casual Shoes</h3>
+                <p>from ₹1799</p>
+            </div>
+            <div class="product-item">
+                <img src="images/p20.jpg" alt="Formal Shoes">
+                <h3>Formal Shoes</h3>
+                <p>from ₹1099</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blazers/Suits Category -->
+    <section class="categories" id="blazers">
+        <h2 class="category-title">Blazers/Suits</h2>
+        <div class="products-container">
+            <div class="product-item">
+                <img src="images/p21.jpg" alt="Stylish Blazer">
+                <h3>Stylish Blazer</h3>
+                <p>₹2999</p>
+            </div>
+            <div class="product-item">
+                <img src="images/p22.jpg" alt="Classic Suit">
+                <h3>Classic Suit</h3>
+                <p>₹4999</p>
+            </div>
+            <div class="product-item">
+                <img src="images/p23.jpg" alt="Formal Blazer">
+                <h3>Formal Blazer</h3>
+                <p>₹3599</p>
+            </div>
+            <div class="product-item">
+                <img src="images/p24.jpg" alt="Casual Blazer">
+                <h3>Casual Blazer</h3>
+                <p>₹2499</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accessories Category -->
+    <section class="categories" id="accessories">
+        <h2 class="category-title">Accessories</h2>
+        <div class="products-container">
+            <div class="product-item">
+                <img src="images/p25.jpg" alt="Watches">
+                <h3>Watches</h3>
+                <p>from ₹1999</p>
+            </div>
+            <div class="product-item">
+                <img src="images/p26.jpg" alt="Bags">
+                <h3>Bags</h3>
+                <p>from ₹1599</p>
+            </div>
+            <div class="product-item">
+                <img src="images/p27.jpg" alt="Belts">
+                <h3>Belts</h3>
+                <p>from ₹899</p>
+            </div>
+            <div class="product-item">
+                <img src="images/p28.jpg" alt="Sunglasses">
+                <h3>Sunglasses</h3>
+                <p>from ₹1499</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p style="text-align: center;">© 2023 GlamAura. All rights reserved.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
